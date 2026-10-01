@@ -1,13 +1,74 @@
-#header{
+/* .header{
             background:#1e3a8a;
             color:white;
             padding:20px;
             text-align:center;
             position:fixed;
         }
-#nav{
+.nav{
             background:#2563eb;
             padding:15px;
             text-align:center;
             position:fixed;
+        } */
+        .header{
+            background:#1e3a8a;
+            color:white;
+            padding:20px;
+            text-align:center;
+            width:100%;
+            position:fixed;
+            top:0%;
+            
         }
+        .nav{
+            background:#2563eb;
+            padding:15px;
+            text-align:center;
+            width:100%;
+            position:fixed;
+            top:80px;
+        }
+        .services{
+    width:90%;
+    margin:60px auto;
+    text-align:center;
+}
+
+.services h2{
+    color:#1e3a8a;
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+.service-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.service-card{
+    width:300px;
+    background:#fff;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+}
+
+.service-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.service-card p{
+    color:#555;
+    line-height:1.6;
+}
+
+

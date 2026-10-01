@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+
+    <link rel="stylesheet" href="okstyle.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+    <h2>🏥 HMS</h2>
+
+    <ul>
+
+        <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+
+        <li><a href="#services"><i class="fa-solid fa-briefcase-medical"></i> Services</a></li>
+
+        <li><a href="#patients"><i class="fa-solid fa-bed"></i> Patient Records</a></li>
+
+        <li><a href="#doctors"><i class="fa-solid fa-user-doctor"></i> Doctors</a></li>
+
+        <li><a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
+
+        <li><a href="#location"><i class="fa-solid fa-location-dot"></i> Location</a></li>
+
+        <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
+
+        <li>
+            <button class="logout-btn" onclick="logout()">
+                Logout
+            </button>
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="main">
+
+<!-- Navbar -->
+
+<div class="navbar">
+
+<h1>Hospital Management System</h1>
+
+</div>
+
+<!-- Home -->
+
+<section id="home" class="banner">
+
+<h2>Welcome to Hospital Management System</h2>
+
+<p>
+Manage Patients, Doctors, Billing,
+Appointments and Hospital Services Easily.
+</p>
+
+<img
+src="https://www.lifemaan.com/images/blog-hero-what-is-hms.jpg"
+alt="Hospital">
+
+</section>
+
+<!-- Services -->
+
+<section id="services">
+
+<h2>Hospital Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<i class="fa-solid fa-user-doctor"></i>
+<h3>General Consultation</h3>
+<p>Experienced doctors available every day.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-truck-medical"></i>
+<h3>Emergency Care</h3>
+<p>24 × 7 Emergency Medical Support.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-pills"></i>
+<h3>Pharmacy</h3>
+<p>Medicines available inside the hospital.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-flask"></i>
+<h3>Laboratory</h3>
+<p>Blood Test, Scan and Diagnostic Services.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Patient Records -->
+
+<section id="patients">
+
+<h2>Patient Records</h2>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Age</th>
+<th>Disease</th>
+</tr>
+
+<tr>
+<td>P101</td>
+<td>Rahul</td>
+<td>25</td>
+<td>Fever</td>
+</tr>
+
+<tr>
+<td>P102</td>
+<td>Priya</td>
+<td>31</td>
+<td>Diabetes</td>
+</tr>
+
+<tr>
+<td>P103</td>
+<td>Arun</td>
+<td>45</td>
+<td>Heart Disease</td>
+</tr>
+
+<tr>
+<td>P104</td>
+<td>Divya</td>
+<td>29</td>
+<td>Asthma</td>
+</tr>
+
+</table>
+
+</section>
+
+<!-- Doctors -->
+
+<section id="doctors">
+
+<h2>Doctors & Specialization</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Dr. Rajesh</h3>
+<p>Cardiologist</p>
+</div>
+
+<div class="card">
+<h3>Dr. Priya</h3>
+<p>Neurologist</p>
+</div>
+
+<div class="card">
+<h3>Dr. Kumar</h3>
+<p>Orthopedic</p>
+</div>
+
+<div class="card">
+<h3>Dr. Anitha</h3>
+<p>Pediatrician</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<p><strong>Phone :</strong> +91 9876543210</p>
+
+<p><strong>Email :</strong> hospital@gmail.com</p>
+
+<p><strong>Address :</strong> Chennai, Tamil Nadu</p>
+
+</section>
+
+<!-- Location -->
+
+<section id="location">
+
+<h2>Hospital Location</h2>
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18..."
+width="100%"
+height="350"
+style="border:0;"
+loading="lazy">
+</iframe>
+
+</section>
+
+<!-- About -->
+
+<section id="about">
+
+<h2>About Hospital</h2>
+
+<p>
+
+Hospital Management System is a web application
+developed to maintain patient records,
+doctor information, appointments,
+medical services and reports efficiently.
+
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Hospital Management System | All Rights Reserved</p>
+
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

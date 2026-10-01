@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Appointment</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f2f7ff;
+}
+
+header{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    width:500px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+h2{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+button:hover{
+    background:#1e40af;
+}
+
+#success{
+    margin-top:20px;
+    color:green;
+    text-align:center;
+    font-weight:bold;
+}
+.back{
+            text-align:center;
+            padding:40px;
+            
+            
+        }
+       
+        .back img{
+            width:100%;
+            max-width:600px;
+            border-radius:10px;
+            height:auto;
+            margin-top:150px;
+            
+        }
+        
+
+</style>
+
+</head>
+<body>
+    <section class = "back">
+        <img src ="https://i.pinimg.com/originals/13/66/c9/1366c95f8c249b8422d2caaae287cb63.gif"
+    </section>
+
+<header>
+<h1>Hospital Management System</h1>
+<p>Book an Appointment</p>
+</header>
+
+<div class="container">
+
+<h2>Appointment Form</h2>
+
+<form id="appointmentForm">
+
+<label>Patient Name</label>
+<input type="text" id="name" required>
+
+<label>Age</label>
+<input type="number" id="age" required>
+
+<label>Gender</label>
+<select id="gender" required>
+<option value="">Select</option>
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+
+<label>Phone Number</label>
+<input type="tel" id="phone" required>
+
+<label>Email</label>
+<input type="email" id="email">
+
+<label>Select Doctor</label>
+<select id="doctor" required>
+<option value="">Choose Doctor</option>
+<option>Dr. Abilesh singh - Cardiology</option>
+<option>Dr. Rakesh Sharma - Neurology</option>
+<option>Dr. Mohan Verma - Orthopedics</option>
+<option>Dr. Vidiyal Reddy - Pediatrics</option>
+<option>Dr. Sindhu Raj - Dermatologist</option>
+<option>Dr. Abinaya Devi - General Physician</option>
+<option>Dr. Yamini Devi - ENT Specialist</option>
+<option>Dr. Sridevi Valli - Gynecology</option>
+</select>
+
+<label>Appointment Date</label>
+<input type="date" id="date" required>
+
+<label>Appointment Time</label>
+<input type="time" id="time" required>
+
+<label>Reason for Visit</label>
+<textarea id="reason" rows="4"></textarea>
+
+<button type="submit">Book Appointment</button>
+
+</form>
+
+<p id="success"></p>
+
+</div>
+
+<script>
+
+document.getElementById("appointmentForm").addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    let appointment = {
+        patientName: document.getElementById("name").value,
+        doctor: document.getElementById("doctor").value,
+        date: document.getElementById("date").value,
+        time: document.getElementById("time").value
+    };
+
+    localStorage.setItem("appointment", JSON.stringify(appointment));
+
+    alert("✅ Appointment Booked Successfully!");
+
+    this.reset();
+     window.location.href = "stu.html";
+
+});
+
+</script>
+
+</body>
+</html>

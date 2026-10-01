@@ -1,0 +1,66 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:right;
+align-items:center;
+background:url("https://i.makeagif.com/media/6-19-2017/hhPgHI.gif") center/cover;
+}
+
+.login-box{
+    
+
+width:350px;
+padding:30px;
+background:rgb(14, 15, 14);
+border-radius:10px;
+box-shadow:0 0 20px rgba(0,0,0,.3);
+text-align:center;
+
+}
+
+h1{
+margin-bottom:30px;
+color:#0077b6;
+}
+
+input{
+
+width:100%;
+padding:12px;
+margin:10px 0;
+font-size:16px;
+border:1px solid gray;
+border-radius:5px;
+
+}
+
+button{
+
+width:100%;
+padding:12px;
+background:#0077b6;
+color:white;
+border:none;
+border-radius:5px;
+font-size:17px;
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#023e8a;
+
+}
+
+#msg{
+margin-top:15px;
+color:red;
+}

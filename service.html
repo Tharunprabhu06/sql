@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hospital Services</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+/* Header */
+
+header{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+/* Navigation */
+
+nav{
+    background:#2563eb;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* Title */
+
+.title{
+    text-align:center;
+    margin:40px 0;
+    color:#1e3a8a;
+}
+
+/* Cards */
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+.cards{
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+
+}
+
+.card{
+
+    width:300px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card img{
+
+    width:100%;
+    height:200px;
+    object-fit:cover;
+
+}
+
+.content{
+
+    padding:20px;
+
+}
+
+.content h3{
+
+    color:#2563eb;
+    margin-bottom:10px;
+
+}
+
+.content p{
+
+    color:#555;
+    line-height:1.5;
+    margin-bottom:20px;
+
+}
+
+button{
+
+    width:100%;
+    padding:10px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+
+}
+
+button:hover{
+
+    background:#1e40af;
+
+}
+
+footer{
+
+    margin-top:50px;
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:15px;
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<h1>Hospital Management System</h1>
+
+<p>Hospital Services</p>
+
+</header>
+
+<nav>
+
+<a href="stu.html">Home</a>
+
+<a href="#">Services</a>
+
+<a href="#">Doctors</a>
+
+<a href="#">Contact</a>
+
+</nav>
+
+<h1 class="title">Our Hospital Services</h1>
+
+<div class="container">
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600">
+
+<div class="content">
+
+<h3>General Consultation</h3>
+
+<p>Consult experienced doctors for routine health checkups and medical advice.</p>
+
+<button>Book Appointment</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=600">
+
+<div class="content">
+
+<h3>Cardiology</h3>
+
+<p>Heart specialists providing diagnosis, ECG, Echo, and advanced cardiac care.</p>
+
+<a href="appointment.html">
+    <button>Book Appointment</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1580281657527-47f249e8f4df?w=600">
+
+<div class="content">
+
+<h3>Orthopedics</h3>
+
+<p>Treatment for fractures, joint pain, bone disorders, and physiotherapy.</p>
+
+<button>Book Appointment</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600">
+
+<div class="content">
+
+<h3>Laboratory</h3>
+
+<p>Blood tests, urine tests, thyroid, diabetes, and complete health packages.</p>
+
+<button>View Tests</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600">
+
+<div class="content">
+
+<h3>Pharmacy</h3>
+
+<p>24×7 pharmacy with genuine medicines and health care products.</p>
+
+<button>View Medicines</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=600">
+
+<div class="content">
+
+<h3>Emergency Care</h3>
+
+<p>Emergency ambulance and trauma care available 24 hours every day.</p>
+
+<button>Call Emergency</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 Hospital Management System | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
